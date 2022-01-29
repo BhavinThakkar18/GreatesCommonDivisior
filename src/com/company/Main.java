@@ -1,6 +1,7 @@
 package com.company;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -57,6 +58,23 @@ public class Main {
             return ans;
         }
     }
+    public static void printFactors(int number)
+    {
+        System.out.print("print");
+        if(number<1)
+        {
+            System.out.println("\"Invalid Value\" since number is < 1");
+        }
+        else{
+        for(int i=1;i<(number/2)+1;i++)
+        {
+            if(number%i==0)
+            {
+                System.out.print(" "+i);
+            }
+        }
+        System.out.println(" "+number);
+    }}
     public static void main(String[] args) {
 	// write your code here
 //        System.out.println(getGreatestCommonDivisor(12,30));
@@ -64,6 +82,13 @@ public class Main {
 //        System.out.println(getGreatestCommonDivisor(9,18));
 //        System.out.println(getGreatestCommonDivisor(81,153));
 //        int[] array = new int[]{7,5,6,8,3};
-        System.out.println(findGCD(new int[]{3,3}));
+//        System.out.println(findGCD(new int[]{3,3}));
+//          printFactors(6);
+//          printFactors(32);
+//          printFactors(10);
+//          printFactors(-1);
+
+
+
     }
 }
